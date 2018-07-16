@@ -14,13 +14,13 @@ tb = document.querySelector(".table")
 
 document.onkeydown = function(){
     if (event.keyCode == 16){
-        down=true; console.log(down)
+        down=true
     }
 }
 
 document.onkeyup = function(){
     if (event.keyCode == 16){
-        down=false; console.log(down)
+        down=false
     }
 }
 
