@@ -12,17 +12,8 @@ document.querySelector(".start").addEventListener('click', start_gol)
 
 tb = document.querySelector(".table")
 
-document.onkeydown = function(){
-    if (event.keyCode == 16){
-        down=true
-    }
-}
-
-document.onkeyup = function(){
-    if (event.keyCode == 16){
-        down=false
-    }
-}
+tb.onmousedown = function(){down=true}
+document.onmouseup = function(){down=false}
 
 for (i=0; i<hight; i++){
     var row = document.createElement('div')
@@ -33,7 +24,7 @@ for (i=0; i<hight; i++){
         var cell = document.createElement('div')
         cell.classList.add("cell", "row" + i, "column" + k)
         row.appendChild(cell)
-        cell.addEventListener('click', life2)
+        cell.addEventListener('mousedown', life2)
         cell.addEventListener('mouseover', life)
         old_cells[i].push(0)
     }

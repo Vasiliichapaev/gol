@@ -16,6 +16,16 @@ body{
     top: 50px;
     left: 100px;
     box-shadow: 0 0 10px 10px;
+
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+     
 }
 
 .row{
