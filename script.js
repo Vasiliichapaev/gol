@@ -37,7 +37,12 @@ function life(event){
 }
 
 function life2(event){
-        this.classList.add("life")
+        if (this.classList.contains("life")){
+            this.classList.remove("life")
+        }else{
+            this.classList.add("life")
+        }
+        
 }
 
 
