@@ -91,18 +91,11 @@ function start_gol() {
                     new_cells[i][k] = 1
                 }
             }
-        }
-    }
-
-
-    for (i=0; i<hight; i++){
-        for (k=0; k<width; k++){
             if (new_cells[i][k]==1){
                 document.querySelector(".row"+i+".column"+k).classList.add("life")
             }else{
                 document.querySelector(".row"+i+".column"+k).classList.remove("life")
             }
-
         }
     }
 
